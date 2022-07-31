@@ -43,7 +43,7 @@ public class main {
 	             }
         	 }catch (Exception e) { 
         		 System.out.println("Invalid input type (must be an integer), please try again.");
-                 reader.nextLine();
+			 reader.nextLine();
         	 }
          }
          
