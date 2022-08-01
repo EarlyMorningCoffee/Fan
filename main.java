@@ -8,7 +8,7 @@ public class main {
 
          //new fan
     	 fan fan = new fan();
-
+    	 System.out.printf("The fan's default speed is %d and its direction is %s \n",fan.getSpeed(),fan.getDirection());
          System.out.println("Please choose one from the two pull cords: " );
          System.out.println("1. Increases the fan speed" + "\n" + "2. Reverses the fan direction" );
          Scanner reader = new Scanner (System.in);
@@ -39,11 +39,11 @@ public class main {
 	            	 fan.setDirection(direction);
 	            	 System.out.printf("The fan's current speed is %d and its direction is %s \n",fan.getSpeed(),fan.getDirection());
 	             }else {
-	            	 System.out.println("Not a valid pull cord, please choose again.");
+	            	 System.out.println("Not a valid pull cord, please choose again. (Please choose valid interger 1 or 2)");
 	             }
         	 }catch (Exception e) { 
-        		 System.out.println("Invalid input type (must be an integer), please try again.");
-			 reader.nextLine();
+        		 System.out.println("Invalid input type (must be integer 1 or 2), please try again.");
+                 reader.nextLine();
         	 }
          }
          
